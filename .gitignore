@@ -1,0 +1,29 @@
+# Environment Variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite3
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp/Uploads
+uploads/
+temp/
+test_bcrypt.py

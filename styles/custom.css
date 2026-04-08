@@ -1,0 +1,115 @@
+/* Master Styles for GenAI Assistant Suite - Polished */
+
+/* Light Theme Variables */
+:root {
+    --primary-color: #4F46E5;
+    --secondary-color: #818CF8;
+    --bg-color: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text-color: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+    --border-radius: 12px;
+}
+
+/* Dark Theme Variables injected via Streamlit theme detector matching */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #6366F1;
+        --secondary-color: #818CF8;
+        --bg-color: #0F172A;
+        --card-bg: #1E293B;
+        --text-color: #F1F5F9;
+        --text-muted: #94A3B8;
+        --border-color: #334155;
+    }
+}
+
+/* Streamlit Native Overrides */
+[data-testid="stAppViewContainer"] {
+    background: var(--bg-color) !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+/* Hide Default Streamlit Menus */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Custom Auth Card */
+.auth-card {
+    padding-bottom: 20px;
+}
+
+/* Custom AI Response Card */
+.ai-response-card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--text-color) !important;
+}
+
+.ai-response-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.ai-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.ai-domain-badge {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.ai-timestamp {
+    color: var(--text-muted) !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.ai-card-body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color) !important;
+}
+
+/* Enhanced Native Input Fields */
+div[data-baseweb="input"], div[data-baseweb="select"] {
+    border-radius: 8px !important;
+}
+
+/* Suggested Prompts Buttons */
+button.step-up {
+    border-radius: 20px !important;
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Modern File Uploader styling */
+[data-testid="stFileUploadDropzone"] {
+    background-color: var(--card-bg) !important;
+    border: 2px dashed var(--border-color) !important;
+    border-radius: var(--border-radius) !important;
+}
