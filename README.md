@@ -15,11 +15,7 @@ It features a fully modernized "SaaS-style" interface, comprehensive browser-coo
 - **Extract & Download**: Automatically generate downloadable PDF reports of localized AI answers utilizing `FPDF`.
 - **Modern Adaptive UX**: Custom-injected CSS providing glassmorphic styling, rounded wrappers, and dynamic auto-syncing between Light and Dark Modes matching system configurations.
 
-## 📸 Screenshots
-*(Add your screenshots here prior to presenting!)*
-- `Dashboard Interface`
-- `Response Output Cards`
-- `Login with Google Screen`
+
 
 ## 🛠 Tech Stack
 - **Frontend / UX**: Streamlit + Custom injected CSS
